@@ -1,7 +1,7 @@
 import React from 'react'
 import Buttons from './Buttons'
-import drumAudio from './assets/drum-audio'
-import pianoAudio from './assets/piano-audio'
+import drumAudio from '../public/drum-audio'
+import pianoAudio from '../public/piano-audio'
 
 function App() {
   const [power, setPower] = React.useState(true);

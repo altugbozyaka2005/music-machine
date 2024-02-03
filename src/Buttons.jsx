@@ -5,7 +5,7 @@ export default function Buttons(props) {
         <div className='buttons-container'>
             <div className='corner-text'>
                 <h2 className='corner-title'>FCC</h2>
-                <img src="./assets/fcc-logo.webp" alt="freecodecamp logo" className='fcc-logo'/> 
+                <img src="../public/fcc-logo.webp" alt="freecodecamp logo" className='fcc-logo'/> 
             </div>
             <div className='setting-container'>
                 <h4 className="setting-text">Power</h4>
