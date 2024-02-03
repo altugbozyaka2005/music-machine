@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+
+
+  --backColor: #8d8d8d;
+}
+
+body {
+  background-color: var(--backColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.drum {
+  width: 600px;
+  height: 350px;
+  border: 3px solid #ffa503;
+  background-color: #b3b3b3;
+  padding-left: 20px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.drumbeat-container {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 90px 90px 90px;
+  gap: 10px;
+  margin: auto 0;
+}
+
+.drum-pad {
+  background-color: #808080;
+  text-align: center;
+  font-family:'Gill Sans';
+  font-weight: 600;
+  font-size: 1.2em;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0px rgb(0, 0, 0, 0.5);
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  margin-left: auto;
+  align-items: center;
+
+}
+
+.corner-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.corner-title {
+  font-family: Verdana;
+  font-size: 1.1em;
+  font-style: italic;
+  margin-right: 4px;
+}
+
+.fcc-logo {
+  width: 1.5em;
+
+}
+
+.setting-text {
+  font-family: Times-New-Roman;
+  font-size: 1.2em;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.toggle-bar {
+  width: 50px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.toggle-circle {
+  width: 20px;
+  height: 20px;
+  margin-left: 0;
+}
+
+.on {
+  background-color: #31a44e;
+  color: white;
+}
+
+.off {
+  background-color: black;
+  color: #1500ff;
+}
+
+.setting-container {
+  margin-top: 40px;
+}
+
+.note-screen {
+  width: 160px;
+  height: 40px;
+  background-color: #808080;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.note-name {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.volume-bar {
+  margin-top: 25px;
+  background-color: #4f4f4f;
+  width: 200px;
+  height: 4px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 1px rgb(0, 0, 0, 0.8);
+  position: relative;
+}
+
+.volume-stick {
+  width: 8px;
+  height: 25px;
+  background-color: #1500ff;
+  box-shadow: 1px 1px 1px rgb(0, 0, 0, 0.8);
+  position: absolute;
+  top: -10px;
+  left: 0px;
+}
+
+.keynote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  font-family:'Gill Sans';
+  font-weight: 600;
+  font-size: 1.2em;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.keynote-letter {
+  font-weight: 600;
+  margin-top: 20px;
+
+}
+
+.black-note {
+  width: 40%;
+  height: 40px;
+  background-color: black;
+}
