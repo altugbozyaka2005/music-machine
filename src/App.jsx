@@ -105,13 +105,20 @@ function App() {
       audioElement.play();
     }
     let noteName;
-    if (bank === "drum") {
-      noteName = drumAudio.find(item => item.link === audioElement.src).name;
-    } else {
-      noteName = pianoAudio.find(item => item.link === audiolement.src).name
+    if (audioElement && audioElement.src) {
+      if (bank === "drum") {
+        const drumAudioItem = drumAudio.find(item => item.link === audioElement.src);
+        noteName = drumAudioItem ? drumAudioItem.name : undefined;
+      } else {
+        const pianoAudioItem = pianoAudio.find(item => item.link === audioElement.src);
+        noteName = pianoAudioItem ? pianoAudioItem.name : undefined;
+      }
     }
-    setNote(noteName)
-    setRecentAction(noteName);
+  
+
+    console.log('Key Pressed:', keyPressed);
+    console.log('Audio Element Src:', audioElement.src);
+    console.log('Note Name:', noteName);
   }
 
   function switchPower(prevState) {

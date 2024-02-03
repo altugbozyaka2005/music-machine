@@ -33,7 +33,7 @@ const audio = [
     },
     {
         name: "6/9",
-        link: "./src/piano-notes/9.flac"
+        link: "./src/piano-notes/8.flac"
     },
 ]
 
